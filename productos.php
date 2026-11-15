@@ -87,10 +87,22 @@ $resultado = $conn->query($sql);
             background: #287a50;
         }
 
+        .boton-clientes {
+            background: #6c55a3;
+        }
+
+        .boton-clientes:hover {
+            background: #514078;
+        }
+
         .mensaje {
             padding: 15px;
             background: #e9ecef;
             border-radius: 5px;
+        }
+
+        .navegacion {
+            margin-bottom: 20px;
         }
     </style>
 </head>
@@ -106,9 +118,18 @@ $resultado = $conn->query($sql);
         de inventario mediante el Kardex.
     </p>
 
-    <a class="boton boton-compra" href="registrar_compra.php">
-        Registrar nueva compra
-    </a>
+    <!-- ACCESOS A LOS MODULOS -->
+    <div class="navegacion">
+
+        <a class="boton boton-compra" href="registrar_compra.php">
+            Registrar nueva compra
+        </a>
+
+        <a class="boton boton-clientes" href="clientes.php">
+            Cartera de clientes
+        </a>
+
+    </div>
 
     <div class="tabla-contenedor">
 
